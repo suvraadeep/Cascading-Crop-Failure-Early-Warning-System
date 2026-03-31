@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "device": "cuda",
+  "max_epochs": 60,
+  "batch_size": 64,
+  "lr": 0.003,
+  "gradient_clip": 0.1,
+  "encoder_length": 90,
+  "pred_length": 21,
+  "hidden_size": 128,
+  "attn_heads": 4,
+  "dropout": 0.15,
+  "hidden_cont": 32,
+  "quantiles": [
+    0.02,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    0.98
+  ],
+  "n_farms": 60,
+  "n_days": 730,
+  "start_date": "2022-01-01",
+  "conformal_alpha": 0.1,
+  "stress_threshold": 0.35,
+  "output_dir": "/content/crop_ews",
+  "model_dir": "/content/crop_ews/models"
+}
